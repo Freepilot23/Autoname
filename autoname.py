@@ -28,25 +28,26 @@ filename = tfio + ".txt"
 print ("Выберите компанию, в которую добавите пользователя \n 1 RNDS \n 2 Winwestor")
 company_name = int (input())
 if company_name == 1: #RNDS
-    file = open(filename, "w")
+    file = open(filename, "w", encoding="utf-8")
     file.write("Приветствую, ниже написаны персональные доступы к нашей корпоративной инфраструктуре.")
     file.write("\nВаша почта: "+ tfio +"@rnds.pro\nВебдоступ: https://yandex.ru\nЛогин: "+ tfio +"@rnds.pro Пароль: " +pas)
     file.write("\n\nКорпоративный гугл-аккаунт для доступа к гугл-диску, календарям, видео-переговоркам:\nЛогин: "+ tfio +"@rnds.pro Пароль: " +pas)
     file.write("\n\nhttp://br.rnds.pro — Амбар, система на базе Гитлаба для работы с версионностью кода и непрерывной доставкой и интеграцией.\nЛогин: " +tfio +"@rnds.pro Пароль: " +pas)
     file.write("\n\nhttps://zeus.rnds.pro/ - наша ЖИРА\nЛогин: " +tfio +" Пароль: " +pas +"\n\nПользователь на компьютере User Пароль: rndssdnr")
     file.close()
-    print("Готово! Ищите файл ", filename, "в папке со скриптом")
+    print("Готово! Ищите файл", filename, "в папке со скриптом")
 
 elif company_name == 2: #winvestor
-    file = open(filename, "w")
+    file = open(filename, "w", encoding="utf-8")
     file.write("Приветствую, ниже написаны персональные доступы к нашей корпоративной инфраструктуре.")
     file.write("\nВаша почта: "+ tfio +"@winvestor.ru\nВебдоступ: https://yandex.ru\nЛогин: "+ tfio +"@winvestor.ru Пароль: " +pas)
     file.write("\n\nКорпоративный гугл-аккаунт для доступа к гугл-диску, календарям, видео-переговоркам:\nЛогин: "+ tfio +"@rnds.pro Пароль: " +pas)
     file.write("\n\nhttp://br.rnds.pro — Амбар, система на базе Гитлаба для работы с версионностью кода и непрерывной доставкой и интеграцией.\nЛогин: " +tfio +"@rnds.pro Пароль: " +pas)
     file.write("\n\nhttps://jupiter.winvestor.ru - наша ЖИРА\nЛогин: " +tfio +" Пароль: " +pas +"\n\nПользователь на компьютере User Пароль: rndssdnr")
     file.close()
-    print("Готово! Ищите файл ", filename, "в папке со скриптом")
+    print("Готово! Ищите файл", filename, "в папке со скриптом")
 
 else:
     print ("Выберите 1 или 2")
-    exit(0)
+input ("Нажмите Enter для выхода")
+exit(0)
